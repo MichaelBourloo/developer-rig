@@ -3,7 +3,7 @@ const fs = require("fs");
 const cli = require("command-line-args");
 
 // Intialize and load command line parameters.
-const now = new Date() | 0;
+const now = Math.abs(new Date() | 0);
 const possibleTypes = ["panel", "video_overlay", "video_component", "mobile"];
 const stdout = "standard output";
 const defaultZoomPixels = 1024;
